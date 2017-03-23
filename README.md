@@ -1,24 +1,10 @@
-# README
+# A Blog Site
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is blog site based on ruby on rails framework.
+Following requirements have been covered:
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
+* A user can sign up
+* Redirected to home directory if user is not signed in when creating a post
+* Authenticated user can delete a post
+* Anyone could make a comment
 * ...
