@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+	before_action :authenticate_user!, except: [:index, :show]
 	def index
 		@posts = Post.all.order('created_at DESC')
 	end
@@ -8,7 +9,7 @@ class PostsController < ApplicationController
 	end
 	
 	def create
-		@post = Post.new(post_params)
+		@post = Post.new(post_params) 
 		if @post.save
 			redirect_to @post
 		else
